@@ -48,8 +48,6 @@ public class UserLoginActivity extends AppCompatActivity implements View.OnClick
         signUpServiceHelper.setSignUpServiceListener(this);
         progressDialogHelper = new ProgressDialogHelper(this);
 
-
-
     }
 
     @Override

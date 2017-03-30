@@ -7,10 +7,10 @@ package com.palprotech.eduappteacher.utils;
 public class EduAppConstants {
 
     // URLS
-    public static final String ADMIN_BASE_URL = "http://happysanz.net/admin_api/";
+    public static final String ADMIN_BASE_URL = "http://happysanz.net/admin/admin_api/";
     public static final String ADMIN_BASE_API = "api.php";
     public static final String GET_SIGN_UP_URL = ADMIN_BASE_URL + ADMIN_BASE_API;
-    public static final String USER_LOGIN_API = "http://happysanz.net/sch0001/api_services/api/login/checkloginAdmin/";
+    public static final String USER_LOGIN_API = "http://happysanz.net/sch0001/api_services/api/login/Adminlogin/";
 
     //Service Params
     public static String PARAM_MESSAGE = "msg";
