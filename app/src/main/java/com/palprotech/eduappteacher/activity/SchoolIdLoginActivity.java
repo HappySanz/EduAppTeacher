@@ -5,8 +5,8 @@ import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
-import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 
 import com.palprotech.eduappteacher.R;
 import com.palprotech.eduappteacher.helper.AlertDialogHelper;
@@ -32,14 +32,14 @@ public class SchoolIdLoginActivity extends AppCompatActivity implements View.OnC
     private ProgressDialogHelper progressDialogHelper;
 
     private EditText inputInstituteId;
-    private Button btnSubmit;
+    private ImageView btnSubmit;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_school_id_login);
         inputInstituteId = (EditText) findViewById(R.id.inputInsId);
-        btnSubmit = (Button) findViewById(R.id.btnSubmit);
+        btnSubmit = (ImageView) findViewById(R.id.btnSubmit);
         btnSubmit.setOnClickListener(this);
 
         signUpServiceHelper = new SignUpServiceHelper(this);

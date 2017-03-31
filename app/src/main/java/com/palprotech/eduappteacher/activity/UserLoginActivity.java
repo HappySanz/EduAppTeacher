@@ -50,11 +50,21 @@ public class UserLoginActivity extends AppCompatActivity implements View.OnClick
 
     }
 
+
     @Override
+
     public void onClick(View v) {
 
         if (CommonUtils.isNetworkAvailable(this)) {
             if (v == btnLogin) {
+
+                if (btnLogin == null) {
+                    btnLogin = (Button) findViewById(v.getId());
+                } else {
+                    btnLogin.setBackgroundResource(R.drawable.round_btn_color);
+                    btnLogin.setTextColor(getResources().getColor(R.color.colorWhite));
+                    btnLogin = (Button) findViewById(v.getId());
+                }
 
                 JSONObject jsonObject = new JSONObject();
                 try {
