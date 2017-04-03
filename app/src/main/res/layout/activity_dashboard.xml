@@ -24,10 +24,8 @@
             android:layout_centerHorizontal="true"
             android:text="MENU"
             android:fontFamily="sans-serif-medium"
-            android:textColor="@color/colorWhite"
+            android:textColor="@color/white"
             android:textSize="22dp"/>
-
-
 
     </RelativeLayout>
 
@@ -35,75 +33,178 @@
         android:layout_width="match_parent"
         android:layout_height="170sp">
 
-        <Button
+        <RelativeLayout
             android:id="@+id/attendance"
             android:layout_width="140dp"
             android:layout_height="140dp"
             android:layout_marginLeft="30sp"
-            android:layout_marginTop="20dp"
-            android:text="Attendance"
-            android:paddingTop="100sp"
-            android:src="@drawable/attendance"
-            android:paddingLeft="20sp"
-            android:background="@drawable/round_btn_plain"/>
+            android:layout_gravity="center"
+            android:background="@drawable/round_btn_plain">
 
+            <ImageView
+                android:layout_width="70sp"
+                android:layout_height="70sp"
+                android:background="@drawable/attendance"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true" />
 
-        <Button
-            android:id="@+id/button2"
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/attendance"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:paddingLeft="15sp"
+                android:textSize="12sp"
+                android:layout_marginBottom="10dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/class_test"
             android:layout_width="140dp"
             android:layout_height="140dp"
-            android:layout_marginTop="30sp"
             android:layout_marginLeft="30sp"
-            android:text="Create class test &amp; homework"
-            android:gravity="center"
-            android:paddingLeft="20sp"
-            android:background="@drawable/round_btn_plain"/>
+            android:layout_gravity="center"
+            android:background="@drawable/round_btn_plain">
 
+            <ImageView
+                android:layout_width="70sp"
+                android:layout_height="70sp"
+                android:background="@drawable/classtest"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/class_test"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:paddingLeft="10sp"
+                android:textSize="12sp"
+                android:layout_marginBottom="10dp" />
+        </RelativeLayout>
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-        <Button
-            android:id="@+id/button3"
+        <RelativeLayout
+            android:id="@+id/exam"
             android:layout_width="140dp"
             android:layout_height="140dp"
-            android:layout_marginTop="25sp"
             android:layout_marginLeft="30sp"
-            android:background="@drawable/round_btn_plain"/>
+            android:layout_gravity="center"
+            android:background="@drawable/round_btn_plain">
 
-        <Button
-            android:id="@+id/button4"
+            <ImageView
+                android:layout_width="70sp"
+                android:layout_height="70sp"
+                android:background="@drawable/exam"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/exam"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:paddingLeft="10sp"
+                android:textSize="12sp"
+                android:layout_marginBottom="10dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/time_table"
             android:layout_width="140dp"
             android:layout_height="140dp"
-            android:layout_marginTop="25sp"
             android:layout_marginLeft="30sp"
-            android:background="@drawable/round_btn_plain"/>
+            android:layout_gravity="center"
+            android:background="@drawable/round_btn_plain">
+
+            <ImageView
+                android:layout_width="70sp"
+                android:layout_height="70sp"
+                android:background="@drawable/timetable"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/time_table"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:paddingLeft="10sp"
+                android:textSize="12sp"
+                android:layout_marginBottom="10dp" />
+        </RelativeLayout>
 
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="170sp">
 
-        <Button
-            android:id="@+id/button5"
+        <RelativeLayout
+            android:id="@+id/events"
             android:layout_width="140dp"
             android:layout_height="140dp"
-            android:layout_marginTop="25sp"
             android:layout_marginLeft="30sp"
-            android:background="@drawable/round_btn_plain"/>
+            android:layout_gravity="center"
+            android:background="@drawable/round_btn_plain">
 
-        <Button
-            android:id="@+id/button6"
+            <ImageView
+                android:layout_width="70sp"
+                android:layout_height="70sp"
+                android:background="@drawable/events"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/attendance"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:paddingLeft="15sp"
+                android:textSize="12sp"
+                android:layout_marginBottom="10dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/communication"
             android:layout_width="140dp"
             android:layout_height="140dp"
-            android:layout_marginTop="25sp"
             android:layout_marginLeft="30sp"
-            android:background="@drawable/round_btn_plain"/>
+            android:layout_gravity="center"
+            android:background="@drawable/round_btn_plain">
 
+            <ImageView
+                android:layout_width="70sp"
+                android:layout_height="70sp"
+                android:background="@drawable/communication"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true" />
 
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/class_test"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:paddingLeft="10sp"
+                android:textSize="12sp"
+                android:layout_marginBottom="10dp" />
+        </RelativeLayout>
     </LinearLayout>
 
 </LinearLayout>
