@@ -48,7 +48,7 @@
         android:hint="School ID"
         android:fontFamily="sans-serif"
         android:padding="10dp"
-        android:textColor="#FFFFFF"
+        android:textColor="@color/white"
         android:textColorHint="@color/light_font"
         android:layout_marginTop="35dp"
         android:layout_below="@+id/imageView"
