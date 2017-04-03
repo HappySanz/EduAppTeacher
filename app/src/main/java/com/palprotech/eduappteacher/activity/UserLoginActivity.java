@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
+
 import com.palprotech.eduappteacher.R;
 import com.palprotech.eduappteacher.helper.AlertDialogHelper;
 import com.palprotech.eduappteacher.helper.ProgressDialogHelper;
@@ -62,7 +63,7 @@ public class UserLoginActivity extends AppCompatActivity implements View.OnClick
                     btnLogin = (Button) findViewById(v.getId());
                 } else {
                     btnLogin.setBackgroundResource(R.drawable.round_btn_color);
-                    btnLogin.setTextColor(getResources().getColor(R.color.colorWhite));
+                    btnLogin.setTextColor(getResources().getColor(R.color.white));
                     btnLogin = (Button) findViewById(v.getId());
                 }
 
