@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="80dp"
@@ -14,19 +15,17 @@
             android:layout_height="30dp"
             android:layout_centerVertical="true"
             android:layout_marginLeft="20dp"
-            android:padding="4dp"
-            />
+            android:padding="4dp" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_centerVertical="true"
             android:layout_centerHorizontal="true"
-            android:text="MENU"
+            android:layout_centerVertical="true"
             android:fontFamily="sans-serif-medium"
-            android:textColor="@color/colorWhite"
-            android:textSize="22dp"/>
-
+            android:text="MENU"
+            android:textColor="@color/white"
+            android:textSize="22dp" />
 
 
     </RelativeLayout>
@@ -39,10 +38,10 @@
             android:id="@+id/attendance"
             android:layout_width="150dp"
             android:layout_height="150dp"
-            android:elevation="1dp"
             android:layout_marginLeft="30dp"
             android:layout_marginTop="30dp"
             android:background="@drawable/round_btn_plain"
+            android:elevation="1dp"
             android:paddingLeft="10dp" />
 
 
@@ -54,7 +53,6 @@
             android:layout_marginTop="30dp"
             android:background="@drawable/round_btn_plain"
             android:paddingLeft="10dp" />
-
 
 
     </LinearLayout>
