@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/appColor">
+
+        <ImageView
+            android:id="@+id/back_btn"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:padding="4dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:text="MENU"
+            android:fontFamily="sans-serif-medium"
+            android:textColor="@color/colorWhite"
+            android:textSize="22dp"/>
+
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="170sp">
+
+        <Button
+            android:id="@+id/attendance"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_marginLeft="30sp"
+            android:layout_marginTop="20dp"
+            android:text="Attendance"
+            android:paddingTop="100sp"
+            android:src="@drawable/attendance"
+            android:paddingLeft="20sp"
+            android:background="@drawable/round_btn_plain"/>
+
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_marginTop="30sp"
+            android:layout_marginLeft="30sp"
+            android:text="Create class test &amp; homework"
+            android:gravity="center"
+            android:paddingLeft="20sp"
+            android:background="@drawable/round_btn_plain"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_marginTop="25sp"
+            android:layout_marginLeft="30sp"
+            android:background="@drawable/round_btn_plain"/>
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_marginTop="25sp"
+            android:layout_marginLeft="30sp"
+            android:background="@drawable/round_btn_plain"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_marginTop="25sp"
+            android:layout_marginLeft="30sp"
+            android:background="@drawable/round_btn_plain"/>
+
+        <Button
+            android:id="@+id/button6"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_marginTop="25sp"
+            android:layout_marginLeft="30sp"
+            android:background="@drawable/round_btn_plain"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>
