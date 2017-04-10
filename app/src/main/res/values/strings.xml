@@ -40,7 +40,7 @@
     <!--Create or Review Test-->
     <!---->
     <string name="create">Create Class Test / Homework</string>
-    <string name="review">Review Class Test / Homework</string>
+    <string name="view">View Class Test / Homework</string>
     <string name="class_t">Class Test</string>
     <string name="homework">Homework</string>
 </resources>

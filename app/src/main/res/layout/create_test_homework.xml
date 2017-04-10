@@ -19,7 +19,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="90sp"
+            android:layout_marginTop="50sp"
             android:layout_marginLeft="120sp"
             android:text="@string/class_t"
             android:textSize="20sp"
@@ -37,7 +37,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="50sp"
+            android:layout_marginTop="30sp"
             android:layout_marginLeft="120sp"
             android:text="@string/homework"
             android:textSize="20sp"
@@ -52,5 +52,42 @@
             android:layout_marginTop="-25sp"
             android:theme="@style/MySwitchTheme"/>
 
+        <TextView
+            android:id="@+id/testdrop"
+            android:layout_width="150sp"
+            android:layout_height="40sp"
+            android:layout_marginLeft="30sp"
+            android:layout_marginTop="40sp"
+            android:background="@drawable/textcolorborder"
+            android:hint="Class"
+            android:textSize="20sp"
+            android:gravity="left|center_vertical"
+            android:padding="10sp"/>
+
+        <TextView
+            android:id="@+id/datedrop"
+            android:layout_width="150sp"
+            android:layout_height="40sp"
+            android:layout_marginLeft="200sp"
+            android:layout_marginTop="-40sp"
+            android:background="@drawable/textcolorborder"
+            android:hint="Date"
+            android:textSize="20sp"
+            android:gravity="left|center_vertical"
+            android:padding="10sp"/>
+
+        <TextView
+            android:id="@+id/subjectdrop"
+            android:layout_width="200sp"
+            android:layout_height="40sp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20sp"
+            android:background="@drawable/textcolorborder"
+            android:hint="Subject"
+            android:textSize="20sp"
+            android:gravity="left|center_vertical"
+            android:padding="10sp"/>
+
     </LinearLayout>
+
 </LinearLayout>
