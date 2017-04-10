@@ -48,6 +48,8 @@
         android:hint="@string/school_id_login"
         android:fontFamily="sans-serif"
         android:padding="10dp"
+        android:inputType="text"
+        android:maxLines="1"
         android:textColor="@color/white"
         android:textColorHint="@color/light_font"
         android:layout_marginTop="35dp"
