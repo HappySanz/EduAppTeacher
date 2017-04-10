@@ -19,9 +19,12 @@ import android.support.annotation.ColorRes;
 import android.support.annotation.DrawableRes;
 import android.util.AttributeSet;
 import android.support.v7.widget.AppCompatImageView;
+import android.widget.ImageView;
+
 import com.palprotech.eduappteacher.R;
 
-public class CircleImageView extends AppCompatImageView {
+
+public class CircleImageView extends ImageView {
 
     private static final ScaleType SCALE_TYPE = ScaleType.CENTER_CROP;
 
