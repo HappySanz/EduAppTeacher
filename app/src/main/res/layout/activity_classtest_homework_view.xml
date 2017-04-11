@@ -22,7 +22,7 @@
             android:elevation="10sp"
             android:stateListAnimator="@null"
             android:textColor="@color/white"
-            android:textSize="20sp"
+            android:textSize="21sp"
             android:text="@string/create"/>
 
         <Button
@@ -33,11 +33,11 @@
             android:layout_gravity="center_horizontal"
             android:background="@drawable/text_border_fill"
             android:textColor="@color/white"
-            android:textSize="20sp"
+            android:textSize="21sp"
             android:translationZ="5sp"
             android:elevation="10sp"
             android:stateListAnimator="@null"
-            android:text="@string/review"/>
+            android:text="@string/view"/>
 
     </LinearLayout>
 
