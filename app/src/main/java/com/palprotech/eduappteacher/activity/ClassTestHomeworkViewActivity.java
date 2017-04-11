@@ -9,7 +9,7 @@ import com.palprotech.eduappteacher.R;
  * Created by Narendar on 05/04/17.
  */
 
-public class ClassTestHomeworkViewSelection extends AppCompatActivity {
+public class ClassTestHomeworkViewActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
