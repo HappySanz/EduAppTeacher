@@ -95,7 +95,7 @@ public class SchoolIdLoginActivity extends AppCompatActivity implements View.OnC
 
                 if ((status != null)) {
                     if (((status.equalsIgnoreCase("activationError")) || (status.equalsIgnoreCase("alreadyRegistered")) ||
-                            (status.equalsIgnoreCase("notRegistered")) || (status.equalsIgnoreCase("Error")))) {
+                            (status.equalsIgnoreCase("notRegistered")) || (status.equalsIgnoreCase("error")))) {
                         signInsuccess = false;
                         Log.d(TAG, "Show error dialog");
                         AlertDialogHelper.showSimpleAlertDialog(this, msg);
@@ -125,7 +125,7 @@ public class SchoolIdLoginActivity extends AppCompatActivity implements View.OnC
                 if (userData != null) {
                     ins_id = userData.getString("institute_id");
 
-                    PreferenceStorage.saveInstituteId(this, userData.getString("institute_id"));
+                    PreferenceStorage.saveInstituteId(this, ins_id);
 
                     Log.d(TAG, "created user id" + ins_id);
 
@@ -134,9 +134,9 @@ public class SchoolIdLoginActivity extends AppCompatActivity implements View.OnC
 
                     String instituteName = userData.getString("institute_name");
                     String instituteCode = userData.getString("institute_code");
-                    String instituteCodeId = userData.getString("institute_code_id");
                     String instituteLogo = userData.getString("institute_logo");
                     String instituteLogoPicUrl = EduAppConstants.GET_SCHOOL_LOGO + instituteLogo;
+                    String userDynamicAPI = EduAppConstants.BASE_URL + instituteCode;
 
                     if ((instituteName != null) && !(instituteName.isEmpty()) && !instituteName.equalsIgnoreCase("null")) {
                         PreferenceStorage.saveInstituteName(this, instituteName);
@@ -144,12 +144,13 @@ public class SchoolIdLoginActivity extends AppCompatActivity implements View.OnC
                     if ((instituteCode != null) && !(instituteCode.isEmpty()) && !instituteCode.equalsIgnoreCase("null")) {
                         PreferenceStorage.saveInstituteCode(this, instituteCode);
                     }
-                    if ((instituteCodeId != null) && !(instituteCodeId.isEmpty()) && !instituteCodeId.equalsIgnoreCase("null")) {
-                        PreferenceStorage.saveInstituteCodeId(this, instituteCodeId);
-                    }
                     if ((instituteLogoPicUrl != null) && !(instituteLogoPicUrl.isEmpty()) && !instituteLogoPicUrl.equalsIgnoreCase("null")) {
                         PreferenceStorage.saveInstituteLogoPic(this, instituteLogoPicUrl);
                     }
+                    if ((userDynamicAPI != null) && !(userDynamicAPI.isEmpty()) && !userDynamicAPI.equalsIgnoreCase("null")) {
+                        PreferenceStorage.saveUserDynamicAPI(this, userDynamicAPI);
+                    }
+
                 }
             } catch (JSONException e) {
                 e.printStackTrace();

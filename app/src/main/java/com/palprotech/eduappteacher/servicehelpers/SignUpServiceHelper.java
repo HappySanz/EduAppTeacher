@@ -86,7 +86,7 @@ public class SignUpServiceHelper {
     public void makeUserLoginServiceCall(String params) {
         Log.d(TAG, "making sign in request" + params);
         final JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(Request.Method.POST,
-                EduAppConstants.BASE_URL + PreferenceStorage.getInstituteCode(context) + EduAppConstants.USER_LOGIN_API, params,
+                PreferenceStorage.getUserDynamicAPI(context) + EduAppConstants.USER_LOGIN_API, params,
                 new com.android.volley.Response.Listener<JSONObject>() {
 
                     @Override

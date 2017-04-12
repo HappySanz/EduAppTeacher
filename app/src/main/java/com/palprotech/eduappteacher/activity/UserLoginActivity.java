@@ -1,5 +1,6 @@
 package com.palprotech.eduappteacher.activity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
@@ -162,17 +163,42 @@ public class UserLoginActivity extends AppCompatActivity implements View.OnClick
                 Log.d(TAG, "userData dictionary" + userData.toString());
                 if (userData != null) {
                     user_id = userData.getString("user_id");
-                    String SchoolId = userData.getString("school_id");
+
+                    PreferenceStorage.saveUserId(this, user_id);
+
+                    Log.d(TAG, "created user id" + user_id);
+
+                    //need to re do this
+                    Log.d(TAG, "sign in response is" + response.toString());
+
                     String Name = userData.getString("name");
                     String UserName = userData.getString("user_name");
                     String UserImage = userData.getString("user_pic");
+                    String UserPicUrl = PreferenceStorage.getUserDynamicAPI(this) + EduAppConstants.USER_IMAGE_API + UserImage;
                     String UserType = userData.getString("user_type");
 
-
+                    if ((Name != null) && !(Name.isEmpty()) && !Name.equalsIgnoreCase("null")) {
+                        PreferenceStorage.saveName(this, Name);
+                    }
+                    if ((UserName != null) && !(UserName.isEmpty()) && !UserName.equalsIgnoreCase("null")) {
+                        PreferenceStorage.saveUserName(this, UserName);
+                    }
+                    if ((UserPicUrl != null) && !(UserPicUrl.isEmpty()) && !UserPicUrl.equalsIgnoreCase("null")) {
+                        PreferenceStorage.saveUserPicture(this, UserPicUrl);
+                    }
+                    if ((UserType != null) && !(UserType.isEmpty()) && !UserType.equalsIgnoreCase("null")) {
+                        PreferenceStorage.saveUserType(this, UserType);
+                    }
                 }
             } catch (JSONException e) {
                 e.printStackTrace();
             }
+
+            Intent intent = new Intent(this, MainActivity.class);
+            intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_CLEAR_TOP);
+            startActivity(intent);
+            finish();
+
         } else {
             Log.d(TAG, "Error while sign In");
         }

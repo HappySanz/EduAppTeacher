@@ -15,6 +15,12 @@
             android:id="@+id/activity_toolbar"
             layout="@layout/tool_bar"></include>
 
+        <include
+            android:id="@+id/dashboard_layout"
+            layout="@layout/activity_dashboard"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
     </LinearLayout>
 
     <LinearLayout
