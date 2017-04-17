@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity implements DialogClickListen
     private ImageView imgNavProfileImage;
     private ArrayAdapter<String> navListAdapter;
     private String[] values = {"PROFILE", "ATTENDANCE", "CLASS TEST & HOMEWORK", "EXAM & RESULT", "TIME TABLE", "CALENDAR", "EVENT", "COMMUNICATION", "SETTINGS", "SIGN OUT"};
-    TextView navUserName = null;
+    TextView navUserProfileName = null;
     RelativeLayout dashAttendance;
     private String mCurrentUserProfileUrl = "";
     Context context;
@@ -76,7 +76,7 @@ public class MainActivity extends AppCompatActivity implements DialogClickListen
     private void initializeViews() {
         Log.d(TAG, "initializin the views");
         Log.d(TAG, "initializing view pager");
-        navUserName = (TextView) findViewById(R.id.user_profile_name);
+        navUserProfileName = (TextView) findViewById(R.id.user_profile_name);
         dashAttendance = (RelativeLayout) findViewById(R.id.attendance);
 
         dashAttendance.setOnClickListener(new View.OnClickListener() {
@@ -88,10 +88,10 @@ public class MainActivity extends AppCompatActivity implements DialogClickListen
         });
 
 
-        String userName = PreferenceStorage.getUserName(getApplicationContext());
-        Log.d(TAG, "user name value" + userName);
-        if ((userName != null) && !userName.isEmpty()) {
-            navUserName.setText(userName);
+        String name = PreferenceStorage.getName(getApplicationContext());
+        Log.d(TAG, "user name value" + name);
+        if ((name != null) && !name.isEmpty()) {
+            navUserProfileName.setText("Hi, " + name);
         }
         String url = PreferenceStorage.getUserPicture(this);
         mCurrentUserProfileUrl = url;
@@ -138,14 +138,13 @@ public class MainActivity extends AppCompatActivity implements DialogClickListen
             }
 
             public void onDrawerOpened(View drawerView) {
-                String userName = PreferenceStorage.getUserName(getApplicationContext());
+                String userProfileName = PreferenceStorage.getName(getApplicationContext());
                 String url = PreferenceStorage.getUserPicture(MainActivity.this);
 
-                Log.d(TAG, "user name value" + userName);
-                if ((userName != null) && !userName.isEmpty()) {
-                    String[] splitStr = userName.split("\\s+");
-                    navUserName.setText(splitStr[0]);
-
+                Log.d(TAG, "user name value" + userProfileName);
+                if ((userProfileName != null) && !userProfileName.isEmpty()) {
+                    String[] splitStr = userProfileName.split("\\s+");
+                    navUserProfileName.setText("Hi, " + splitStr[0]);
                 }
 
                 if (((url != null) && !(url.isEmpty())) && !(url.equalsIgnoreCase(mCurrentUserProfileUrl))) {
