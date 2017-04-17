@@ -7,17 +7,15 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="170sp"
+        android:layout_height="wrap_content"
         android:layout_marginTop="15sp"
         android:gravity="center"
-        android:orientation="horizontal"
-        android:paddingLeft="5dp">
+        android:orientation="horizontal">
 
         <LinearLayout
             android:id="@+id/attendance"
             android:layout_width="match_parent"
-            android:layout_height="150dp"
-            android:layout_gravity="center"
+            android:layout_height="140dp"
             android:layout_weight="0.50"
             android:background="@drawable/round_btn_plain"
             android:gravity="center"
@@ -41,8 +39,7 @@
         <LinearLayout
             android:id="@+id/class_test"
             android:layout_width="match_parent"
-            android:layout_height="150dp"
-            android:layout_gravity="center"
+            android:layout_height="140dp"
             android:layout_weight="0.50"
             android:background="@drawable/round_btn_plain"
             android:gravity="center"
@@ -67,17 +64,15 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="170sp"
-        android:layout_marginTop="-15sp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5sp"
         android:gravity="center"
-        android:orientation="horizontal"
-        android:paddingLeft="5dp">
+        android:orientation="horizontal">
 
         <LinearLayout
             android:id="@+id/exam"
             android:layout_width="match_parent"
-            android:layout_height="150dp"
-            android:layout_gravity="center"
+            android:layout_height="140dp"
             android:layout_weight="0.50"
             android:background="@drawable/round_btn_plain"
             android:gravity="center"
@@ -101,8 +96,7 @@
         <LinearLayout
             android:id="@+id/timetable"
             android:layout_width="match_parent"
-            android:layout_height="150dp"
-            android:layout_gravity="center"
+            android:layout_height="140dp"
             android:layout_weight="0.50"
             android:background="@drawable/round_btn_plain"
             android:gravity="center"
@@ -127,17 +121,15 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="170sp"
-        android:layout_marginTop="-15dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
         android:gravity="center"
-        android:orientation="horizontal"
-        android:paddingLeft="5dp">
+        android:orientation="horizontal">
 
         <LinearLayout
             android:id="@+id/events"
             android:layout_width="match_parent"
-            android:layout_height="150dp"
-            android:layout_gravity="center"
+            android:layout_height="140dp"
             android:layout_weight="0.50"
             android:background="@drawable/round_btn_plain"
             android:gravity="center"
@@ -160,8 +152,7 @@
         <LinearLayout
             android:id="@+id/communication"
             android:layout_width="match_parent"
-            android:layout_height="150dp"
-            android:layout_gravity="center"
+            android:layout_height="140dp"
             android:layout_weight="0.50"
             android:background="@drawable/round_btn_plain"
             android:gravity="center"
