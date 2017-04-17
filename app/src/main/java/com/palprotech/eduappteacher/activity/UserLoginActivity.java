@@ -162,7 +162,7 @@ public class UserLoginActivity extends AppCompatActivity implements View.OnClick
                 String user_id = null;
                 Log.d(TAG, "userData dictionary" + userData.toString());
                 if (userData != null) {
-                    user_id = userData.getString("user_id");
+                    user_id = userData.getString("user_id")+"";
 
                     PreferenceStorage.saveUserId(this, user_id);
 

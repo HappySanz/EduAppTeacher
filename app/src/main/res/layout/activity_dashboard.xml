@@ -16,7 +16,6 @@
             android:layout_height="140dp"
             android:layout_gravity="center"
             android:layout_marginLeft="30sp"
-
             android:background="@drawable/round_btn_plain">
 
             <ImageView

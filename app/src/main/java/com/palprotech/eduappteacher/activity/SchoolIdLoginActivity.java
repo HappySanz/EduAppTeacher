@@ -123,7 +123,7 @@ public class SchoolIdLoginActivity extends AppCompatActivity implements View.OnC
 
                 Log.d(TAG, "userData dictionary" + userData.toString());
                 if (userData != null) {
-                    ins_id = userData.getString("institute_id");
+                    ins_id = userData.getString("institute_id")+"";
 
                     PreferenceStorage.saveInstituteId(this, ins_id);
 
