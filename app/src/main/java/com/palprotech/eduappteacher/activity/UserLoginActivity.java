@@ -162,7 +162,7 @@ public class UserLoginActivity extends AppCompatActivity implements View.OnClick
                 String user_id = null;
                 Log.d(TAG, "userData dictionary" + userData.toString());
                 if (userData != null) {
-                    user_id = userData.getString("user_id")+"";
+                    user_id = userData.getString("user_id") + "";
 
                     PreferenceStorage.saveUserId(this, user_id);
 
@@ -176,6 +176,7 @@ public class UserLoginActivity extends AppCompatActivity implements View.OnClick
                     String UserImage = userData.getString("user_pic");
                     String UserPicUrl = PreferenceStorage.getUserDynamicAPI(this) + EduAppConstants.USER_IMAGE_API + UserImage;
                     String UserType = userData.getString("user_type");
+                    String UserTypeName = userData.getString("user_type_name");
 
                     if ((Name != null) && !(Name.isEmpty()) && !Name.equalsIgnoreCase("null")) {
                         PreferenceStorage.saveName(this, Name);
@@ -188,6 +189,9 @@ public class UserLoginActivity extends AppCompatActivity implements View.OnClick
                     }
                     if ((UserType != null) && !(UserType.isEmpty()) && !UserType.equalsIgnoreCase("null")) {
                         PreferenceStorage.saveUserType(this, UserType);
+                    }
+                    if ((UserTypeName != null) && !(UserTypeName.isEmpty()) && !UserTypeName.equalsIgnoreCase("null")) {
+                        PreferenceStorage.saveUserTypeName(this, UserTypeName);
                     }
                 }
             } catch (JSONException e) {

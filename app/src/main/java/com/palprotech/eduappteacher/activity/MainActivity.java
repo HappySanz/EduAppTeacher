@@ -17,6 +17,7 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
@@ -42,7 +43,7 @@ public class MainActivity extends AppCompatActivity implements DialogClickListen
     private ArrayAdapter<String> navListAdapter;
     private String[] values = {"PROFILE", "ATTENDANCE", "CLASS TEST & HOMEWORK", "EXAM & RESULT", "TIME TABLE", "CALENDAR", "EVENT", "COMMUNICATION", "SETTINGS", "SIGN OUT"};
     TextView navUserProfileName = null;
-    RelativeLayout dashAttendance;
+    LinearLayout dashAttendance;
     private String mCurrentUserProfileUrl = "";
     Context context;
 
@@ -77,7 +78,7 @@ public class MainActivity extends AppCompatActivity implements DialogClickListen
         Log.d(TAG, "initializin the views");
         Log.d(TAG, "initializing view pager");
         navUserProfileName = (TextView) findViewById(R.id.user_profile_name);
-        dashAttendance = (RelativeLayout) findViewById(R.id.attendance);
+        dashAttendance = (LinearLayout) findViewById(R.id.attendance);
 
         dashAttendance.setOnClickListener(new View.OnClickListener() {
             @Override

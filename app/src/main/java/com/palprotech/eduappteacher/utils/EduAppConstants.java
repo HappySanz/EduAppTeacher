@@ -54,6 +54,7 @@ public class EduAppConstants {
     public static final String KEY_USER_NAME = "user_name";
     public static final String KEY_USER_IMAGE = "user_pic";
     public static final String KEY_USER_TYPE = "user_type";
+    public static final String KEY_USER_TYPE_NAME = "user_type_name";
 
 
 }
