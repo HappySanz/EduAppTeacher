@@ -38,12 +38,12 @@
         <ListView
             android:id="@+id/nav_drawer_options_list"
             android:layout_width="match_parent"
-            android:layout_height="0dp"
+            android:layout_height="1dp"
             android:layout_gravity="start"
             android:layout_weight="1"
-            android:background="@color/nav_back_ground_color"
-            android:divider="@color/nav_row_color"
-            android:dividerHeight="1dp"
+            android:background="@color/transparent"
+            android:dividerHeight="1sp"
+            android:divider="@color/nav_list_color"
             android:scrollbars="vertical" />
 
     </LinearLayout>

@@ -12,7 +12,6 @@
             <item android:right="5dp" android:top="5dp" android:left="5dp" android:bottom="5dp">
                 <shape>
                     <corners android:radius="10dp" />
-                    <solid android:color="#14000000"/>
                 </shape>
             </item>
             <item android:bottom="10dp" android:right="8dp" android:left="0dp" >
