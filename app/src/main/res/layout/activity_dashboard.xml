@@ -10,7 +10,8 @@
         android:layout_height="170sp"
         android:layout_marginTop="15sp"
         android:gravity="center"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:paddingLeft="5dp">
 
         <LinearLayout
             android:id="@+id/attendance"
@@ -31,12 +32,8 @@
                 android:background="@drawable/attendance" />
 
             <TextView
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:gravity="center"
-                android:layout_alignEnd="@+id/imageView2"
-                android:layout_alignRight="@+id/imageView2"
-                android:layout_below="@+id/imageView2"
                 android:text="@string/attendance"
                 android:textSize="12sp" />
         </LinearLayout>
@@ -70,114 +67,110 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="170sp"
+        android:layout_marginTop="-15sp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingLeft="5dp">
 
-        <RelativeLayout
+        <LinearLayout
             android:id="@+id/exam"
-            android:layout_width="140sp"
-            android:layout_height="140sp"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
             android:layout_gravity="center"
-            android:layout_marginLeft="30sp"
-            android:background="@drawable/round_btn_plain">
+            android:layout_weight="0.50"
+            android:background="@drawable/round_btn_plain"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/examimg"
+                android:layout_width="70sp"
+                android:layout_height="70sp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/exam" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/exam"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/timetable"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:layout_weight="0.50"
+            android:background="@drawable/round_btn_plain"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="70sp"
+                android:layout_height="70sp"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/timetable" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:text="@string/time_table"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="170sp"
+        android:layout_marginTop="-15dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingLeft="5dp">
+
+        <LinearLayout
+            android:id="@+id/events"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:layout_weight="0.50"
+            android:background="@drawable/round_btn_plain"
+            android:gravity="center"
+            android:orientation="vertical">
 
             <ImageView
                 android:layout_width="70sp"
                 android:layout_height="70sp"
                 android:layout_alignParentTop="true"
                 android:layout_centerHorizontal="true"
-                android:layout_marginRight="5sp"
-                android:layout_marginTop="2sp"
-                android:background="@drawable/exam" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentBottom="true"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true"
-                android:layout_marginBottom="16sp"
-                android:paddingLeft="12sp"
-                android:text="@string/exam"
-                android:textSize="12sp" />
-        </RelativeLayout>
-
-        <RelativeLayout
-            android:id="@+id/time_table"
-            android:layout_width="140sp"
-            android:layout_height="140sp"
-            android:layout_gravity="center"
-            android:layout_marginLeft="30sp"
-            android:background="@drawable/round_btn_plain">
-
-            <ImageView
-                android:id="@+id/imageView5"
-                android:layout_width="70sp"
-                android:layout_height="70sp"
-                android:layout_marginLeft="20sp"
-                android:layout_marginTop="3sp"
-                android:background="@drawable/timetable" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignEnd="@+id/imageView5"
-                android:layout_alignParentBottom="true"
-                android:layout_alignRight="@+id/imageView5"
-                android:layout_marginBottom="15sp"
-                android:paddingLeft="2sp"
-                android:text="@string/time_table"
-                android:textSize="12sp" />
-        </RelativeLayout>
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="170sp">
-
-        <RelativeLayout
-            android:id="@+id/events"
-            android:layout_width="140sp"
-            android:layout_height="140sp"
-            android:layout_gravity="center"
-            android:layout_marginLeft="30sp"
-            android:background="@drawable/round_btn_plain">
-
-            <ImageView
-                android:layout_width="70sp"
-                android:layout_height="70sp"
-                android:layout_marginLeft="20sp"
-                android:layout_marginTop="6sp"
                 android:background="@drawable/events" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignParentBottom="true"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true"
-                android:layout_marginBottom="15sp"
-                android:layout_marginLeft="35sp"
-                android:paddingLeft="1sp"
                 android:text="@string/events"
                 android:textSize="12sp" />
+        </LinearLayout>
 
-        </RelativeLayout>
-
-        <RelativeLayout
+        <LinearLayout
             android:id="@+id/communication"
-            android:layout_width="140sp"
-            android:layout_height="140sp"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
             android:layout_gravity="center"
-            android:layout_marginLeft="30sp"
-            android:background="@drawable/round_btn_plain">
+            android:layout_weight="0.50"
+            android:background="@drawable/round_btn_plain"
+            android:gravity="center"
+            android:orientation="vertical">
 
             <ImageView
-                android:id="@+id/imageView3"
                 android:layout_width="70sp"
                 android:layout_height="70sp"
-                android:layout_marginLeft="20sp"
-                android:layout_marginTop="3sp"
+                android:layout_alignParentTop="true"
                 android:background="@drawable/communication" />
 
             <TextView
@@ -186,11 +179,9 @@
                 android:layout_alignParentBottom="true"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true"
-                android:layout_marginBottom="13sp"
-                android:paddingLeft="4sp"
                 android:text="@string/communication"
                 android:textSize="12sp" />
-        </RelativeLayout>
+        </LinearLayout>
     </LinearLayout>
 
 </LinearLayout>
