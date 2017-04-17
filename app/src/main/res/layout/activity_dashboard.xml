@@ -8,12 +8,12 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="170sp"
-        android:layout_marginTop="15dp">
+        android:layout_marginTop="15sp">
 
         <RelativeLayout
             android:id="@+id/attendance"
-            android:layout_width="140dp"
-            android:layout_height="140dp"
+            android:layout_width="140sp"
+            android:layout_height="140sp"
             android:layout_gravity="center"
             android:layout_marginLeft="30sp"
             android:background="@drawable/round_btn_plain">
@@ -24,7 +24,7 @@
                 android:layout_height="70sp"
                 android:layout_alignParentTop="true"
                 android:layout_centerHorizontal="true"
-                android:layout_marginTop="2dp"
+                android:layout_marginTop="2sp"
                 android:background="@drawable/attendance" />
 
             <TextView
@@ -33,7 +33,7 @@
                 android:layout_alignEnd="@+id/imageView2"
                 android:layout_alignRight="@+id/imageView2"
                 android:layout_below="@+id/imageView2"
-                android:layout_marginTop="17dp"
+                android:layout_marginTop="17sp"
                 android:paddingLeft="15sp"
                 android:text="@string/attendance"
                 android:textSize="12sp" />
@@ -41,8 +41,8 @@
 
         <RelativeLayout
             android:id="@+id/class_test"
-            android:layout_width="140dp"
-            android:layout_height="140dp"
+            android:layout_width="140sp"
+            android:layout_height="140sp"
             android:layout_gravity="center"
             android:layout_marginLeft="30sp"
             android:background="@drawable/round_btn_plain">
@@ -51,8 +51,8 @@
                 android:layout_width="70sp"
                 android:layout_height="70sp"
                 android:layout_alignParentTop="true"
-                android:layout_marginLeft="20dp"
-                android:layout_marginTop="3dp"
+                android:layout_marginLeft="20sp"
+                android:layout_marginTop="3sp"
                 android:background="@drawable/classtest" />
 
             <TextView
@@ -61,8 +61,8 @@
                 android:layout_alignParentBottom="true"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true"
-                android:layout_marginBottom="10dp"
-                android:layout_marginLeft="12dp"
+                android:layout_marginBottom="10sp"
+                android:layout_marginLeft="12sp"
                 android:paddingLeft="2sp"
                 android:text="@string/class_test"
                 android:textSize="12sp" />
@@ -75,8 +75,8 @@
 
         <RelativeLayout
             android:id="@+id/exam"
-            android:layout_width="140dp"
-            android:layout_height="140dp"
+            android:layout_width="140sp"
+            android:layout_height="140sp"
             android:layout_gravity="center"
             android:layout_marginLeft="30sp"
             android:background="@drawable/round_btn_plain">
@@ -86,8 +86,8 @@
                 android:layout_height="70sp"
                 android:layout_alignParentTop="true"
                 android:layout_centerHorizontal="true"
-                android:layout_marginRight="5dp"
-                android:layout_marginTop="2dp"
+                android:layout_marginRight="5sp"
+                android:layout_marginTop="2sp"
                 android:background="@drawable/exam" />
 
             <TextView
@@ -96,7 +96,7 @@
                 android:layout_alignParentBottom="true"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true"
-                android:layout_marginBottom="16dp"
+                android:layout_marginBottom="16sp"
                 android:paddingLeft="12sp"
                 android:text="@string/exam"
                 android:textSize="12sp" />
@@ -104,8 +104,8 @@
 
         <RelativeLayout
             android:id="@+id/time_table"
-            android:layout_width="140dp"
-            android:layout_height="140dp"
+            android:layout_width="140sp"
+            android:layout_height="140sp"
             android:layout_gravity="center"
             android:layout_marginLeft="30sp"
             android:background="@drawable/round_btn_plain">
@@ -114,8 +114,8 @@
                 android:id="@+id/imageView5"
                 android:layout_width="70sp"
                 android:layout_height="70sp"
-                android:layout_marginLeft="20dp"
-                android:layout_marginTop="3dp"
+                android:layout_marginLeft="20sp"
+                android:layout_marginTop="3sp"
                 android:background="@drawable/timetable" />
 
             <TextView
@@ -124,7 +124,7 @@
                 android:layout_alignEnd="@+id/imageView5"
                 android:layout_alignParentBottom="true"
                 android:layout_alignRight="@+id/imageView5"
-                android:layout_marginBottom="15dp"
+                android:layout_marginBottom="15sp"
                 android:paddingLeft="2sp"
                 android:text="@string/time_table"
                 android:textSize="12sp" />
@@ -138,8 +138,8 @@
 
         <RelativeLayout
             android:id="@+id/events"
-            android:layout_width="140dp"
-            android:layout_height="140dp"
+            android:layout_width="140sp"
+            android:layout_height="140sp"
             android:layout_gravity="center"
             android:layout_marginLeft="30sp"
             android:background="@drawable/round_btn_plain">
@@ -147,8 +147,8 @@
             <ImageView
                 android:layout_width="70sp"
                 android:layout_height="70sp"
-                android:layout_marginLeft="20dp"
-                android:layout_marginTop="6dp"
+                android:layout_marginLeft="20sp"
+                android:layout_marginTop="6sp"
                 android:background="@drawable/events" />
 
             <TextView
@@ -157,8 +157,8 @@
                 android:layout_alignParentBottom="true"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true"
-                android:layout_marginBottom="15dp"
-                android:layout_marginLeft="35dp"
+                android:layout_marginBottom="15sp"
+                android:layout_marginLeft="35sp"
                 android:paddingLeft="1sp"
                 android:text="@string/events"
                 android:textSize="12sp" />
@@ -167,8 +167,8 @@
 
         <RelativeLayout
             android:id="@+id/communication"
-            android:layout_width="140dp"
-            android:layout_height="140dp"
+            android:layout_width="140sp"
+            android:layout_height="140sp"
             android:layout_gravity="center"
             android:layout_marginLeft="30sp"
             android:background="@drawable/round_btn_plain">
@@ -177,8 +177,8 @@
                 android:id="@+id/imageView3"
                 android:layout_width="70sp"
                 android:layout_height="70sp"
-                android:layout_marginLeft="20dp"
-                android:layout_marginTop="3dp"
+                android:layout_marginLeft="20sp"
+                android:layout_marginTop="3sp"
                 android:background="@drawable/communication" />
 
             <TextView
@@ -187,7 +187,7 @@
                 android:layout_alignParentBottom="true"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true"
-                android:layout_marginBottom="13dp"
+                android:layout_marginBottom="13sp"
                 android:paddingLeft="4sp"
                 android:text="@string/communication"
                 android:textSize="12sp" />
