@@ -17,7 +17,7 @@ public class EduAppConstants {
     public static final String GET_SCHOOL_LOGO = BASE_URL + "institute_logo/";
 
     // USERS URL
-    public static final String USER_LOGIN_API = "/api/login/adminlogin/";
+    public static final String USER_LOGIN_API = "/api/login/mainLogin/";
     public static final String USER_IMAGE_API = "/assets/admin/profile/";
 
     //Service Params

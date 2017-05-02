@@ -54,7 +54,7 @@ public class MainActivity extends AppCompatActivity implements DialogClickListen
         toolbar = (Toolbar) findViewById(R.id.activity_toolbar);
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayShowHomeEnabled(true);
-        getSupportActionBar().setHomeAsUpIndicator(R.drawable.ic_navigation_drawer);
+        getSupportActionBar().setHomeAsUpIndicator(R.drawable.new_navi);
 
         initializeNavigationDrawer();
         initializeViews();
